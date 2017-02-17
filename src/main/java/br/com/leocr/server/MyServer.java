@@ -1,6 +1,9 @@
 package br.com.leocr.server;
 
 
+import br.com.leocr.server.model.Number;
+import br.com.leocr.server.request.NumberRequest;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
@@ -19,5 +22,5 @@ public interface MyServer {
     @Path("/sumtriple")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    Integer sumTriple(Number number);
+    Integer sumTriple(NumberRequest number);
 }

@@ -1,6 +1,7 @@
 package br.com.leocr.server.impl;
 import br.com.leocr.server.MyServer;
-import br.com.leocr.server.Number;
+import br.com.leocr.server.model.Number;
+import br.com.leocr.server.request.NumberRequest;
 
 import javax.ws.rs.Path;
 
@@ -18,11 +19,13 @@ public class MyServerImpl implements MyServer {
     }
 
     @Override
-    public Integer sumTriple(Number number) {
-        if (number == null) {
-            System.out.println("************* Is nulll!!");
+    public Integer sumTriple(NumberRequest numberRequest) {
+        Integer result = 0;
+        for (Number number : numberRequest.getNumber()) {
+            result += number.getNumber1() + number.getNumber2() +
+                    number.getNumber3();
         }
-        System.out.println("************ Number: " + number);
-        return number.getNumber1() + number.getNumber2() + number.getNumber3();
+
+        return result;
     }
 }

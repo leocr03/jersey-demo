@@ -1,4 +1,4 @@
-package br.com.leocr.server;
+package br.com.leocr.server.model;
 
 import com.fasterxml.jackson.annotation.JsonRootName;
 
