@@ -1,7 +1,5 @@
 package br.com.leocr.server;
 
-
-import br.com.leocr.server.model.Number;
 import br.com.leocr.server.request.NumberRequest;
 
 import javax.ws.rs.*;
