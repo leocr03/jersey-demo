@@ -4,6 +4,10 @@ This demo demonstrates simple examples of Jersey with path parameters and JSON a
 
 *Instructions:*
 
+Run with gradle: `gradle build tomcatRunWar`
+
+In another terminal:
+
 `curl -v -X GET  "http://localhost:8080/jersey-demo/myserver/firstname/Leonardo%20Cristofari"`
 
 `curl -v -X GET  "http://localhost:8080/jersey-demo/myserver/sum/14/7"`
