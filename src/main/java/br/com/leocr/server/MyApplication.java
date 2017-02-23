@@ -14,5 +14,6 @@ public class MyApplication extends ResourceConfig {
         packages( "br.com.leocr.server");
         property(String.valueOf(SerializationFeature.WRAP_ROOT_VALUE), true);
         property(String.valueOf(DeserializationFeature.UNWRAP_ROOT_VALUE), true);
+        property(org.glassfish.jersey.server.ServerProperties.BV_SEND_ERROR_IN_RESPONSE, true);
     }
 }
